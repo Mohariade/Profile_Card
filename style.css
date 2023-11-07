@@ -1,0 +1,269 @@
+:root{
+    /* CSS HEX */
+    --green: #08D9D6;
+    --dark-grey: #252A34;
+    --white-grey: #EAEAEA;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+h1 {
+    font-size: 47px;
+    line-height: 72px;
+    font-weight: 900;
+    
+}
+
+h2 {
+    font-size: 37px;
+    line-height: 58px;
+    font-weight: 800;
+    
+}
+
+h3 {
+    font-size: 29px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 23px;
+    line-height: 37px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+button{
+    padding: 12px 24px;
+
+    border-radius: 12px;
+    border: none;
+
+    
+
+    color: var(--dark-grey);
+    text-align: center;
+    
+    
+    
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    background-color: var(--green);
+
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.tag{
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.125rem;
+    border: 1px solid #08D9D6;
+}
+
+.tag:hover{
+    border-radius: 1.125rem;
+    border: 1px solid #08D9D6;
+    background: rgba(8, 217, 214, 0.10);
+}
+
+.h-container{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.v-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.line-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    
+}
+
+
+
+
+
+.icon:hover{
+    opacity: 0.8;
+}
+
+
+
+
+#card{
+    display: flex;
+    
+    width: 24rem;
+
+    padding: 3.1875rem 5.9375rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+
+    border-radius: 3.75rem;
+    background: linear-gradient(163deg, rgba(80, 83, 112, 0.40) 19.51%, rgba(37, 42, 52, 0.00) 104.12%);
+    box-shadow: 4px 8px 24px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+}
+
+
+
+.profile-img{
+    border: solid 8px var(--green);
+    border-radius: 50%;
+    width: 12rem;
+}
+
+.profile-img img{
+    width: 12rem;
+    aspect-ratio: 1;
+}
+
+.line{
+    width: 100%;
+    height: 0.0625rem;
+    background: #EAEAEA;
+    margin: 1rem 0rem;
+    opacity: 0.4;
+}
+
+#profile{
+    align-items: center;
+}
+
+
+#prof{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    line-height: normal;
+}
+
+#love{
+    background: url("/icons8-love-52\ 1.png"), 50% / cover no-repeat;
+}
+
+#comment{
+    background: url("/icons8-comment-48\ 1.png"),  50% / cover no-repeat;
+}
+
+#options{
+    width: 100%;
+    justify-content: space-between;
+}
+
+#skills, #contacts{
+    width: 100%;
+}
+
+
+#face{
+    background: url("/icons8-facebook\ \(1\)\ 1.png"),  50% / cover no-repeat;
+    background-size: cover;
+}
+
+#insta{
+    background: url("/icons8-insta\ 1.png"),  50% / cover no-repeat;
+    background-size: cover;
+}
+
+#github{
+    background: url("/icons8-github\ 1.png"),  50% / cover no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (0 <= height <= 1100px) {
+    /* ... */
+  
+    #profile{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    #name{
+        font-size: 37px;
+        line-height: 58px;
+        font-weight: 800;
+    }
+    #card{
+        width: 30rem;
+        padding: 2rem 4rem;
+    }
+    
+}
